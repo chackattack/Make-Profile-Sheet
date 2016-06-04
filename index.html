@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Create your Profile</title>
+	
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+	<div class="container mainForm">
+		
+		<div id="newProfile" class="col-sm-6 col-sm-offset-3">
+		<h1>New Profile</h1>
+		<!-- New profile questions -->
+		<form name="newprofile1">
+			<!-- name -->
+			<div class="form-group">
+				<input type="text" name="userfname" class="form-control" placeholder="First Name">
+				<input type="text" name="userlname" class="form-control" placeholder="Last Name">
+			</div>
+			<!-- Gender -->
+			<div class="form-group">
+				Gender:
+				<label class="radio-inline">
+					<input type="radio" name="usergender" value="male"> Male
+					</label>
+				<label class="radio-inline">
+					<input type="radio" name="usergender" value="female"> Female
+					</label>
+				</div>
+			<!-- email -->
+			<div class="form-group">
+				<input type="email" name="userEmail" class="form-control" placeholder="Email Address">
+				</div>
+			<!-- Phone number -->
+			<div class="form-group">
+				<input type="number" name="userPhone" class="form-control" placeholder="Phone Number">
+			</div>
+			<!-- Favorite Animal -->
+			<div class="form-group1">
+				<select name="favAnimal" class="form-control">
+					<option value="Cat">Cat</option>
+					<option value="Rabbit">Rabbit</option>
+					<option value="Turtle">Turtle</option>
+					<option value="Blueberry">Blueberry</option>
+				</select>
+			</div>
+			<!-- First Language -->
+			<div class="form-group">
+				First Language:
+				<br>
+				<label class="radio-inline">
+					<input type="radio" name="userLang" value="English">English
+				</label>
+				<label class="radio-inline">
+					<input type="radio" name="userLang" value="Spanish">Spanish
+				</label>
+				<label class="radio-inline">
+					<input type="radio" name="userLang" value="Chinese">Chinese
+				</label>
+				<label class="radio-inline">
+					<input type="radio" name="userLang" value="Arabic">Arabic
+				</label>
+			</div>
+			<!-- Textarea form -->
+		  		<label for="comment">Additional Notes:</label>
+  				<textarea maxlength="150" class="form-control" name="userNote" rows="5" id="comment"></textarea>
+
+  			<br>
+  			<!-- Button -->
+			<div class="form-group form-action">
+			<button id="sendDataButton" type="button" class="btn btn-default">Continue</button>
+			</div>
+
+		</form>
+		
+	</div> 
+
+	<div id="updatedProfile" class="col-sm-6 col-sm-offset-3">
+		<h1>Profile</h1>
+		<!-- Updated Profile Posts Here -->
+		<div>
+			<h2 id="userName"></h2>
+			<h3 id="userGender"></h3>
+			<h3 id="userEmail"></h3>
+			<h3 id="userPhone"></h3>
+			<h3 id="userAnimal"></h3>
+			<h3 id="userLanguage"></h3>	
+			<h2 id="userNote"></h2>
+		</div>
+		</div>
+	</div>
+
+
+
+<!-- pulling javascript-->
+<script src="js/main.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
